@@ -16,6 +16,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.white,
@@ -97,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                       onPressed: () {
-                        // Respond to button press
+                        Navigator.pushNamed(context, '/home');
                       },
                       child: const Text(
                         '로그인',

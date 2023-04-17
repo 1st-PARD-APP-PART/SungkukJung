@@ -29,10 +29,15 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.fromLTRB(22, 12, 15, 22),
             child: Row(
               children: <Widget>[
-                SizedBox(
-                  height: 100,
-                  width: 100,
-                  child: Image.asset(item.imgUrl),
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/detail');
+                  },
+                  child: SizedBox(
+                    height: 100,
+                    width: 100,
+                    child: Image.asset(item.imgUrl),
+                  ),
                 ),
                 const SizedBox(
                   width: 13.5,
@@ -166,9 +171,11 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 1,
         backgroundColor: Colors.white,
+        shadowColor: const Color(0xffF5F5F5),
         leadingWidth: 116,
         leading: Row(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -227,7 +234,9 @@ class _HomePageState extends State<HomePage> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/additem');
+        },
         child: const Icon(
           Icons.add,
           color: Colors.white,

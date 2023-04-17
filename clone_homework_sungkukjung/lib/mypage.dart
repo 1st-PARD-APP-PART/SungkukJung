@@ -15,10 +15,11 @@ class _MyPageState extends State<MyPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 1,
         backgroundColor: Colors.white,
-        shadowColor: Color(0xffF5F5F5),
+        shadowColor: const Color(0xffF5F5F5),
         leadingWidth: 115,
         leading: Row(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -108,7 +109,7 @@ class _MyPageState extends State<MyPage> {
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           elevation: 0,
-                          backgroundColor: Color(0xffFCEEE0),
+                          backgroundColor: const Color(0xffFCEEE0),
                           shape: const CircleBorder(),
                         ),
                         onPressed: () {},
@@ -139,7 +140,7 @@ class _MyPageState extends State<MyPage> {
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           elevation: 0,
-                          backgroundColor: Color(0xffFCEEE0),
+                          backgroundColor: const Color(0xffFCEEE0),
                           shape: const CircleBorder(),
                         ),
                         onPressed: () {},
@@ -170,7 +171,7 @@ class _MyPageState extends State<MyPage> {
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           elevation: 0,
-                          backgroundColor: Color(0xffFCEEE0),
+                          backgroundColor: const Color(0xffFCEEE0),
                           shape: const CircleBorder(),
                         ),
                         onPressed: () {},

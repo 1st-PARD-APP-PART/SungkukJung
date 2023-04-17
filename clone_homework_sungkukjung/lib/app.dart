@@ -9,6 +9,9 @@ import 'home.dart';
 import 'location.dart';
 import 'mypage.dart';
 import 'edit_profile.dart';
+import 'add_item.dart';
+import 'detail.dart';
+import 'chat.dart';
 
 class CarrotApp extends StatelessWidget {
   CarrotApp({Key? key}) : super(key: key);
@@ -46,6 +49,9 @@ class CarrotApp extends StatelessWidget {
         '/location': (BuildContext context) => const LocationPage(),
         '/mypage': (BuildContext context) => const MyPage(),
         '/editprofile': (BuildContext context) => const EditProfilePage(),
+        '/additem': (BuildContext context) => const AddItemPage(),
+        '/detail': (BuildContext context) => const DetailPage(),
+        '/chat': (BuildContext context) => const ChatPage(),
       },
     );
   }
