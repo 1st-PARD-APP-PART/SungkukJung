@@ -1,5 +1,5 @@
 // ignore_for_file: library_private_types_in_public_api
-
+// 회원가입 화면
 import 'package:flutter/material.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -10,6 +10,7 @@ class SignUpPage extends StatefulWidget {
 }
 
 class _SignUpPageState extends State<SignUpPage> {
+  // controller notifies listener
   final _phoneNumberController = TextEditingController();
   final _passwordController = TextEditingController();
   final _passwordConfirmController = TextEditingController();
@@ -18,6 +19,7 @@ class _SignUpPageState extends State<SignUpPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // 배경 색갈
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
@@ -57,9 +59,11 @@ class _SignUpPageState extends State<SignUpPage> {
             const SizedBox(
               height: 23,
             ),
+            // 정보 입력
             Expanded(
               child: ListView(
                 children: <Widget>[
+                  // 전화번호
                   TextFormField(
                     controller: _phoneNumberController,
                     decoration: const InputDecoration(
@@ -74,6 +78,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   const SizedBox(
                     height: 13,
                   ),
+                  // 비밀번호
                   TextFormField(
                     controller: _passwordController,
                     decoration: const InputDecoration(
@@ -89,6 +94,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   const SizedBox(
                     height: 13,
                   ),
+                  // 비밀번호 확인
                   TextFormField(
                     controller: _passwordConfirmController,
                     decoration: const InputDecoration(
@@ -104,6 +110,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   const SizedBox(
                     height: 13,
                   ),
+                  // 닉네임
                   TextFormField(
                     controller: _nicknameController,
                     decoration: const InputDecoration(
@@ -128,6 +135,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           borderRadius: BorderRadius.circular(6),
                         ),
                       ),
+                      // named route -> 홈 화면
                       onPressed: () {
                         Navigator.pushNamed(context, '/home');
                       },

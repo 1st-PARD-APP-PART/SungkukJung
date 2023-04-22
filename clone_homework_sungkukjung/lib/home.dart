@@ -1,5 +1,5 @@
 // ignore_for_file: library_private_types_in_public_api
-
+// 홈 화면
 import 'package:flutter/material.dart';
 
 import 'model/item.dart';
@@ -12,8 +12,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  // bottomNavigationBar 위해 필요함..
   int _selectedIndex = 0;
 
+  // 카드 만드는 함수
   List<Card> _buildCard(BuildContext context) {
     List<Item> items = ItemsRep.loadItems();
 

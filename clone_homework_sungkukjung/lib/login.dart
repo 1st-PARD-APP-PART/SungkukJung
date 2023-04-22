@@ -1,5 +1,5 @@
 // ignore_for_file: library_private_types_in_public_api
-
+// 로그인 화면
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -10,6 +10,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  // controller notifies listener
   final _phoneNumberController = TextEditingController();
   final _passwordController = TextEditingController();
 
@@ -58,6 +59,7 @@ class _LoginPageState extends State<LoginPage> {
             Expanded(
               child: ListView(
                 children: <Widget>[
+                  // 전화 번호
                   TextFormField(
                     controller: _phoneNumberController,
                     decoration: const InputDecoration(
@@ -72,6 +74,7 @@ class _LoginPageState extends State<LoginPage> {
                   const SizedBox(
                     height: 13,
                   ),
+                  // 비밀번호
                   TextFormField(
                     controller: _passwordController,
                     decoration: const InputDecoration(
@@ -97,6 +100,7 @@ class _LoginPageState extends State<LoginPage> {
                           borderRadius: BorderRadius.circular(6),
                         ),
                       ),
+                      // named route -> 홈 화면
                       onPressed: () {
                         Navigator.pushNamed(context, '/home');
                       },

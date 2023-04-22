@@ -16,6 +16,7 @@ import 'chat.dart';
 class CarrotApp extends StatelessWidget {
   CarrotApp({Key? key}) : super(key: key);
 
+// theme color
   MaterialColor mainColor = const MaterialColor(
     0xFFFF7E36,
     <int, Color>{
@@ -32,6 +33,7 @@ class CarrotApp extends StatelessWidget {
     },
   );
 
+// named routes
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
