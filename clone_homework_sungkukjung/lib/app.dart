@@ -2,16 +2,16 @@
 
 import 'package:flutter/material.dart';
 
-import 'start.dart';
-import 'login.dart';
-import 'signup.dart';
-import 'home.dart';
-import 'location.dart';
-import 'mypage.dart';
-import 'edit_profile.dart';
-import 'add_item.dart';
-import 'detail.dart';
-import 'chat.dart';
+import 'screen/start.dart';
+import 'screen/login.dart';
+import 'screen/signup.dart';
+import 'screen/home.dart';
+import 'screen/location.dart';
+import 'screen/mypage.dart';
+import 'screen/edit_profile.dart';
+import 'screen/add_item.dart';
+import 'screen/detail.dart';
+import 'screen/chat.dart';
 
 class CarrotApp extends StatelessWidget {
   CarrotApp({Key? key}) : super(key: key);
